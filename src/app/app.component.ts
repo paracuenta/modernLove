@@ -4,8 +4,15 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { TranslateService } from 'ng2-translate';
 
+import { AboutPage } from '../pages/about/about';
+import { CouplePage } from '../pages/couple/couple';
+import { GroupPage } from '../pages/group/group';
+import { MainPage } from '../pages/main/main';
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
+import { SettingsPage } from '../pages/settings/settings';
+import { SinglePage } from '../pages/single/single';
+import { TrioPage } from '../pages/trio/trio';
 
 
 @Component({
@@ -24,8 +31,15 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      { title: 'About', component: AboutPage },
+      { title: 'Couple', component: CouplePage },
+      { title: 'Group', component: GroupPage },
+      { title: 'Main', component: MainPage },
       { title: 'Page One', component: Page1 },
-      { title: 'Page Two', component: Page2 }
+      { title: 'Page Two', component: Page2 },
+      { title: 'Settings', component: SettingsPage },
+      { title: 'Single', component: SinglePage },
+      { title: 'Trio', component: TrioPage }
     ];
 
   }
@@ -56,7 +70,7 @@ export class MyApp {
 
       translate.setDefaultLang(lang);
       translate.use(lang);
-      
+
     } catch (error) {
       console.log(error);
     }
