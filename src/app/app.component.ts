@@ -2,6 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
+import { TranslateService } from 'ng2-translate';
+
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 
@@ -16,7 +18,8 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform) {
+  constructor(public platform: Platform, translate: TranslateService) {
+    this.getLang(translate);
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -40,5 +43,22 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
+  }
+
+  getLang(translate){
+    try {
+      let lang;
+      if(localStorage.getItem('lang') != null){
+        lang = localStorage.getItem('lang');
+      } else {
+        lang = navigator.language.split('-')[0];
+      }
+
+      translate.setDefaultLang(lang);
+      translate.use(lang);
+      
+    } catch (error) {
+      console.log(error);
+    }
   }
 }
