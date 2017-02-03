@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { TranslateService } from 'ng2-translate';
+
 import { MainPage } from '../main/main';
 
 @Component({
@@ -8,29 +10,26 @@ import { MainPage } from '../main/main';
   templateUrl: 'settings.html'
 })
 export class SettingsPage {
-  category: any;
-  limit: any;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  lang: any;
+  rootPage: any = MainPage;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: TranslateService) {
     this.getDefaults();
   }
 
   getDefaults(){
-    if(localStorage.getItem('category') != null){
-      this.category = localStorage.getItem('category');
+    if(localStorage.getItem('lang') != null){
+      this.lang = localStorage.getItem('lang');
     } else {
-      this.category = 'sports';
-    }
-
-    if(localStorage.getItem('limit') != null){
-      this.limit = localStorage.getItem('limit');
-    } else {
-      this.limit = 10;
+      this.lang = navigator.language.split('-')[0];
     }
   }
 
   setDefaults(){
-    localStorage.setItem('category', this.category);
-    localStorage.setItem('limit', this.limit);
-    this.navCtrl.push(MainPage)
+    localStorage.setItem('lang', this.lang);
+    this.translate.setDefaultLang(this.lang);
+    this.translate.use(this.lang);
+
+    this.navCtrl.setRoot(MainPage);
   }
 }

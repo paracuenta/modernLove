@@ -4,38 +4,24 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>settings</ion-title>
+    <ion-title>{{ 'SETTINGS' | translate }}</ion-title>
   </ion-navbar>
 
 </ion-header>
-
 
 <ion-content padding>
   <form (submit)="setDefaults()">
     <ion-list>
       <ion-item>
-        <ion-label fixed>Category</ion-label>
-        <ion-select [(ngModel)]="category" name="category">
-          <ion-option value="sports">Sports</ion-option>
-          <ion-option value="food">Food</ion-option>
-          <ion-option value="news">News</ion-option>
-          <ion-option value="music">Music</ion-option>
-          <ion-option value="funny">Funny</ion-option>
-          <ion-option value="gaming">Gaming</ion-option>
-          <ion-option value="art">Art</ion-option>
+        <ion-label fixed>{{ 'LANGUAGE' | translate }}</ion-label>
+        <ion-select [(ngModel)]="lang" name="language">
+          <ion-option value="ca">{{ 'CA' | translate }}</ion-option>
+          <ion-option value="en">{{ 'EN' | translate }}</ion-option>
+          <ion-option value="es">{{ 'ES' | translate }}</ion-option>
+          <ion-option value="pt">{{ 'PT' | translate }}</ion-option>
         </ion-select>
       </ion-item>
-      <ion-item>
-        <ion-label fixed>Limit</ion-label>
-        <ion-select [(ngModel)]="limit" name="limit">
-          <ion-option value="5">5</ion-option>
-          <ion-option value="10">10</ion-option>
-          <ion-option value="15">15</ion-option>
-          <ion-option value="20">20</ion-option>
-          <ion-option value="25">25</ion-option>
-        </ion-select>
-      </ion-item>
-      <button ion-button type="submit" block>Save Changes</button>
+      <button ion-button type="submit" class="botonPrincipal" block>Save Changes</button>
     </ion-list>
   </form>
 </ion-content>

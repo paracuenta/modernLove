@@ -9,10 +9,11 @@ import { MainPage } from '../pages/main/main';
 import { SettingsPage } from '../pages/settings/settings';
 import { SinglePage } from '../pages/single/single';
 import { TrioPage } from '../pages/trio/trio';
+import { SlidesPage } from '../pages/slides/slides';
 
 import { TranslateModule } from 'ng2-translate/ng2-translate';
-import {TranslateLoader, TranslateStaticLoader} from 'ng2-translate/ng2-translate';
-import {Http} from '@angular/http';
+import { TranslateLoader, TranslateStaticLoader } from 'ng2-translate/ng2-translate';
+import { Http } from '@angular/http';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, 'assets/i18n', '.json');
@@ -27,7 +28,8 @@ export function createTranslateLoader(http: Http) {
     MainPage,
     SettingsPage,
     SinglePage,
-    TrioPage
+    TrioPage,
+    SlidesPage
   ],
   imports: [
     TranslateModule.forRoot({
@@ -46,7 +48,8 @@ export function createTranslateLoader(http: Http) {
     MainPage,
     SettingsPage,
     SinglePage,
-    TrioPage
+    TrioPage,
+    SlidesPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

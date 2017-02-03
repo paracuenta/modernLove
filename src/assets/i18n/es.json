@@ -1,4 +1,20 @@
 {
+  "LANGUAGE": "Idioma",
+  "CA": "Catalan",
+  "EN": "Inglés",
+  "ES": "Español",
+  "PT": "Portugues",
+
+  "TITLESLIDE1": "!Bienvenid@ a Modern Love!",
+  "DESCRIPTIONSLIDE1": "La app que te permitirá saber la <b>compatibilidad con otras personas</b>.",
+  "TITLESLIDE2": "¿Tu pareja ideal?",
+  "DESCRIPTIONSLIDE2": "¿Estás <b>enamorad@</b> de tu pareja? Introduce vuestros nombres y descubre si es la definitiva. O puede que descubras nuevos amores de una forma que nunca habías imaginado.",
+  "TITLESLIDE3": "¿Sol@ o en compañía?",
+  "DESCRIPTIONSLIDE3": "¿Quién te va a querer mas que tu mismo? ¿Alguna vez has imaginado estar con más de una persona... <b>al mismo tiempo</b>? Averígualo!",
+  "SKIP": "Saltar",
+  "PLAY": "¿Listo para jugar?",
+  "CONTINUE": "Continuar",
+
   "ABOUT": "Info",
   "COUPLE": "Pareja",
   "GROUP": "Grupo",

@@ -12,10 +12,6 @@ export class CouplePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SinglePage');
-  }
-
   get score() {
     const letters =(this.name1 + this.name2).toLowerCase();
     let sum = 0;
