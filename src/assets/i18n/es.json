@@ -1,4 +1,21 @@
 {
-  "PAGE ONE": "Página uno",
-  "PAGE TWO": "Página dos"
+  "ABOUT": "Info",
+  "COUPLE": "Pareja",
+  "GROUP": "Grupo",
+  "MAIN": "Menú",
+  "SETTINGS": "Propiedades",
+  "SINGLE": "Single",
+  "TRIO": "Trio",
+
+  "NOMBRE": "Tu nombre",
+  "NOMBRE1": "Primer nombre",
+  "NOMBRE2": "Segundo nombre",
+  "NOMBRE3": "Tercer nombre",
+  "NOMBRE4": "Cuarto nombre",
+  "NOMBRE5": "Quinto nombre",
+  "NOMBRE6": "Sexto nombre",
+  "NOMBRE7": "Septimo nombre",
+  "NOMBRE8": "Octavo nombre",
+  "NOMBRE9": "Noveno nombre",
+  "NOMBRE10": "Decimo nombre"
 }

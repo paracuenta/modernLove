@@ -6,8 +6,6 @@ import { AboutPage } from '../pages/about/about';
 import { CouplePage } from '../pages/couple/couple';
 import { GroupPage } from '../pages/group/group';
 import { MainPage } from '../pages/main/main';
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
 import { SettingsPage } from '../pages/settings/settings';
 import { SinglePage } from '../pages/single/single';
 import { TrioPage } from '../pages/trio/trio';
@@ -27,8 +25,6 @@ export function createTranslateLoader(http: Http) {
     CouplePage,
     GroupPage,
     MainPage,
-    Page1,
-    Page2,
     SettingsPage,
     SinglePage,
     TrioPage
@@ -48,8 +44,6 @@ export function createTranslateLoader(http: Http) {
     CouplePage,
     GroupPage,
     MainPage,
-    Page1,
-    Page2,
     SettingsPage,
     SinglePage,
     TrioPage

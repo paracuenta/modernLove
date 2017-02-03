@@ -8,7 +8,6 @@ import { NavController, NavParams } from 'ionic-angular';
 export class SinglePage {
 
   name1 ="";
-  name2 ="";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
@@ -17,7 +16,7 @@ export class SinglePage {
   }
 
   get score() {
-    const letters =(this.name1 + this.name2).toLowerCase();
+    const letters =(this.name1).toLowerCase();
     let sum = 0;
     for (let i=0; i<letters.length; i++){
       sum += letters.charCodeAt(i);
