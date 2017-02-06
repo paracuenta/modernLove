@@ -1,6 +1,6 @@
 {
-  "name": "ionic-hello-world",
-  "author": "Ionic Framework",
+  "name": "modernlove",
+  "author": "Aitor",
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
@@ -41,5 +41,5 @@
     "cordova-plugin-statusbar"
   ],
   "cordovaPlatforms": [],
-  "description": "ModernLove: An Ionic project"
+  "description": "ModernLove: Find your ideal match"
 }
